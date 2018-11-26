@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #b9b9b9;
+  background: #f7f7f7;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+}
+a {
+  color: #b9b9b9;
+}
+
+.frame form {
+  margin: 20px 0;
+  padding: 40px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #b9b9b9;
+}
+.frame input[type='text'] {
+  background: #f0f0f0;
+}
+
+.frame input[value='Login'] {
+  background: #a9dd7d;
+}
+.frame input[value='Signup'] {
+  background: #fea15d;
+}
