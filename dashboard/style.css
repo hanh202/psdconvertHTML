@@ -10,7 +10,32 @@ html,
 body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
   background: #f2f3f8;
+  color: #2c304d;
+  font-size: 13px;
 }
+
+/* style dung chung */
+a:hover{
+  text-decoration: none;
+}
+.button{
+  background: linear-gradient(to right, #e23f83, #e23f83 50%,#ea5844);
+  border-radius: 20px;
+  padding: 8px 15px;
+  color:white;
+}
+.title-frame{
+  padding: 10px;
+    margin: 10px 0;
+}
+.button2{
+  background: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: #2c304d;
+  box-shadow: 0 0 20px #ccc;
+}
+/* end style dung chung */
 
 /* style top */
 .top .toggle-button {
@@ -66,3 +91,19 @@ body {
 }
 
 /* end style nav-slidebar */
+
+
+/* style widgets-frame */
+.widgets .widgets-frame{
+  margin: 10px 0;
+}
+.widgets1-left>div{
+  height: 48%;
+}
+
+.widgets .widgets1 .happy-customers{
+  background: linear-gradient(135deg,#6859ea,#6acbe0);
+}
+/* style widgets-item1 */
+
+/* end style widgets-frame */

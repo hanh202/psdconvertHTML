@@ -1,129 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="LTH" />
-    <title>Document</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Noto+Sans:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="../lib/font-awesome-4.7.0/css/font-awesome.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- top -->
-    <div class="top d-flex align-items-center bg-white flex-wrap">
-      <div class="logo"><img src="../images/dashboad-logo.png" alt="" /></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="LTH" />
+  <title>Document</title>
 
-      <div class="toggle-button d-flex flex-column">
-        <span></span> <span></span> <span></span>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Noto+Sans:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- top -->
+  <div class="top d-flex align-items-center bg-white flex-wrap">
+    <div class="logo"><img src="../images/dashboad-logo.png" alt="" /></div>
+
+    <div class="toggle-button d-flex flex-column">
+      <span></span> <span></span> <span></span>
+    </div>
+
+    <div class="right ml-auto d-flex justify-content-end align-items-center">
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
       </div>
+      <div class="notification">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+      </div>
+      <div class="user">
+        <img src="../images/dashboad-user.png" class="rounded-circle" alt="" />
+      </div>
+      <div class="openslidebar">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
 
-      <div class="right ml-auto d-flex justify-content-end align-items-center">
-        <div class="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
+  <!-- body -->
+  <div class="body d-flex">
+    <!-- nav-slidebar -->
+    <div class="nav-slidebar d-flex flex-column text-center">
+      <div class="nav-slidebar-frame m-2">
+        <div class="nav-item dashboard-app ">
+          <div class="open icon-frame d-flex flex-column">
+            <i class="fa fa-columns" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <div class="dropdown">
+              <div class="text">Default</div>
+              <div class="text">Compact</div>
+              <div class="text">Modern</div>
+              <div class="text">Social</div>
+              <div class="text">All</div>
+            </div>
+          </div>
+
+          <div class="apps icon-frame d-flex flex-column">
+            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+
+          <div class="widgets icon-frame">
+            <i class="fa fa-spinner" aria-hidden="true"></i>
+          </div>
         </div>
-        <div class="notification">
-          <i class="fa fa-bell-o" aria-hidden="true"></i>
+
+        <div class="nav-item  component">
+          <div class="text"><span>component</span></div>
+          <div class="icon-frame shareAlt d-flex flex-column">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame fonts d-flex flex-column">
+            <i class="fa fa-font" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame listAlt d-flex flex-column">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame map d-flex flex-column">
+            <i class="fa fa-map-o" aria-hidden="true"></i>
+          </div>
         </div>
-        <div class="user">
-          <img
-            src="../images/dashboad-user.png"
-            class="rounded-circle"
-            alt=""
-          />
-        </div>
-        <div class="openslidebar">
-          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        <div class="nav-item  pages">
+          <div class="text"><span>pages</span></div>
+          <div class="icon-frame authentication d-flex flex-column">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame fileText d-flex flex-column">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame dollar d-flex flex-column">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div class="icon-frame exclamation d-flex flex-column">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- body -->
-    <div class="body border d-flex">
-      <!-- nav-slidebar -->
-      <div class="nav-slidebar d-flex flex-column text-center">
-        <div class="nav-slidebar-frame m-2">
-          <div class="nav-item dashboard-app ">
-            <div class="open icon-frame d-flex flex-column">
-              <i class="fa fa-columns" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-              <div class="dropdown">
-                <div class="text">Default</div>
-                <div class="text">Compact</div>
-                <div class="text">Modern</div>
-                <div class="text">Social</div>
-                <div class="text">All</div>
+    <div class="content-frame border flex-fill">
+      <!-- content -->
+      <div class="content">
+        <div class="content-body m-2">
+          <div class="page-title my-3 d-flex">
+            <div class="text">Dashboard</div>
+            <div class="tools ml-auto">
+              <a href="#" class="button">Add Widget</a>
+            </div>
+          </div>
+
+          <div class="widgets border">
+            <!-- <div class="widgets-frame widgets1 border d-flex">
+              <div class="col-md-3 widgets1-left border pl-0 h-100">
+                <div class="hit-rate px-2 bg-white" style="position: relative">
+                  <h6 class="font-weight-bold pt-3">Hit Rate</h6>
+                  <div class="canvas">
+                    <canvas id="chart1" class="chart h-100 w-100"></canvas>
+                  </div>
+
+                </div>
+                <div class="happy-customers mt-3 px-2" style="position: relative">
+                  <h6 class="font-weight-bold text-white pt-3">Happy Cutomers</h6>
+                  <div class="canvas">
+                    <canvas id="chart2" class="chart h-100 w-100"></canvas>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="col-md-9 widgets1-right bg-white border p-0">
+                <div class="title-frame d-flex">
+                  <div class="title mr-auto">Delivered orders</div>
+                  <div><a href="#" class="button2">View all</a></div>
+                </div>
+                <div class="content">
+                  <img src="../images/chartBar.png" class="w-100" alt="">
+                  <div class="chart border col-md-9">
+                    <div class="chart-frame h-100">
+                      <canvas id="chartBar" class="w-100 h-100"></canvas>
+                    </div>
+                  </div>
+                  <div class="total border col-md-3">total</div>
+                </div>
+              </div>
+            </div> -->
 
-            <div class="apps icon-frame d-flex flex-column">
-              <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
+            <div class="widgets-frame widgets2 border">frame 2</div>
 
-            <div class="widgets icon-frame">
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </div>
-          </div>
+            <div class="widgets-frame widgets3 border">frame 3</div>
 
-          <div class="nav-item  component">
-            <div class="text"><span>component</span></div>
-            <div class="icon-frame shareAlt d-flex flex-column">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame fonts d-flex flex-column">
-              <i class="fa fa-font" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame listAlt d-flex flex-column">
-              <i class="fa fa-list-alt" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame map d-flex flex-column">
-              <i class="fa fa-map-o" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="nav-item  pages">
-            <div class="text"><span>pages</span></div>
-            <div class="icon-frame authentication d-flex flex-column">
-              <i class="fa fa-user-o" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame fileText d-flex flex-column">
-              <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame dollar d-flex flex-column">
-              <i class="fa fa-usd" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            <div class="icon-frame exclamation d-flex flex-column">
-              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
+            <div class="widgets-frame widgets4 border">frame 4</div>
+
           </div>
         </div>
-      </div>
 
-      <div class="content-frame border flex-fill">
-        <!-- content -->
-        <div class="content">content</div>
 
         <!-- footer -->
-        <div class="footer border">footer</div>
+        <div class="footer-frame border">
+          <div class="footer m-2">footer</div>
+        </div>
       </div>
+
+
     </div>
 
+
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
     <script src="./myjs.js"></script>
-  </body>
+</body>
+
 </html>
