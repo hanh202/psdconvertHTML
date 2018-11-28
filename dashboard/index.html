@@ -107,7 +107,7 @@
       </div>
     </div>
 
-    <div class="content-frame border flex-fill">
+    <div class="content-frame flex-fill">
       <!-- content -->
       <div class="content">
         <div class="content-body m-2">
@@ -118,23 +118,8 @@
             </div>
           </div>
 
-          <div class="widgets border">
+          <div class="widgets">
             <!-- <div class="widgets-frame widgets1 border d-flex">
-              <div class="col-md-3 widgets1-left border pl-0 h-100">
-                <div class="hit-rate px-2 bg-white" style="position: relative">
-                  <h6 class="font-weight-bold pt-3">Hit Rate</h6>
-                  <div class="canvas">
-                    <canvas id="chart1" class="chart h-100 w-100"></canvas>
-                  </div>
-
-                </div>
-                <div class="happy-customers mt-3 px-2" style="position: relative">
-                  <h6 class="font-weight-bold text-white pt-3">Happy Cutomers</h6>
-                  <div class="canvas">
-                    <canvas id="chart2" class="chart h-100 w-100"></canvas>
-                  </div>
-                </div>
-              </div>
               <div class="col-md-9 widgets1-right bg-white border p-0">
                 <div class="title-frame d-flex">
                   <div class="title mr-auto">Delivered orders</div>
@@ -152,11 +137,491 @@
               </div>
             </div> -->
 
-            <div class="widgets-frame widgets2 border">frame 2</div>
+            <div class="widgets-frame widgets1 d-flex">
+              <div class="col-md-4 p-0">
+                <div class="mr-3">
+                  <div class="w-item  mb-3">
+                    <h6 class="font-weight-bold p-3">Hit Rate</h6>
+                    <div class="canvas">
+                      <canvas id="chart1"></canvas>
+                    </div>
+                  </div>
+                  <div class="w-item happy-customers">
+                    <h6 class="font-weight-bold p-3">Happy Cutomers</h6>
+                    <div class="canvas">
+                      <canvas id="chart2"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 w-item d-flex flex-column">
+                <div class="title-frame d-flex">
+                  <div class="title mr-auto">Delivered orders</div>
+                  <div><a href="#" class="button2">View all</a></div>
+                </div>
+                <div class="chart  d-flex">
+                  <div class="col-md-9 ">
+                    <canvas id="chartBar"></canvas>
+                  </div>
+                  <div class="col-md-3  text-center">
+                    <div class="new-order mb-2">
+                      <div class="title">New Orders</div>
+                      <canvas id="chart3" class="w-100 h-100"></canvas>
+                    </div>
+                    <div class="total delivered">
+                      <div class="title">Total Delivered</div>
+                      <div class="solieu"><h1>2564</h1></div>
+                    </div>
+                    <div class="total estimated">
+                      <div class="title">Total Estimated</div>
+                      <div class="solieu"><h1>834</h1></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div class="widgets-frame widgets3 border">frame 3</div>
+            <div class="widgets-frame widgets2  d-flex flex-wrap">
+              <div class="col-md-4 ">
+                <div class="mr-3 w-item">
+                  <div class="p-3 d-flex border-bottom">
+                    <div class="title mr-auto">Blog Post</div>
+                    <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                  </div>
+                  <div class="content-frame">
+                    <div class="content m-3 p-3">
+                      <div class="info d-flex">
+                        <div class="user ">
+                          <img src="../images/user2.png" class="rounded-circle" alt="">
+                        </div>
+                        <div class="info-content ml-3">
+                          <h6 class="title"><span class="text-pink">Lisa Garett</span> posted an image</h6>
+                          <div class="text-black-50">42 min ago</div>
+                        </div>
+                      </div>
+                      <div class="images my-3">
+                        <img src="../images/img-widgets2.png" width="100%" alt="">
+                      </div>
+                      <div class="meta d-flex text-black-50">
+                        <div class="like ml-auto">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i> <span>30</span>
+                        </div>
+                        <div class="comment ml-2">
+                          <i class="fa fa-heart" aria-hidden="true"></i> <span>64</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="write-comment border-top p-3 d-flex text-black-50">
+                    <div class="title mr-auto">Write a comment ...</div>
+                    <div class="icon"><i class="fa fa-smile-o" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" aria-hidden="true"></i></div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-4 w-item mr-3">
+                <div class="p-3 d-flex border-bottom">
+                  <div class="title mr-auto">Top Author</div>
+                  <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                </div>
+                <div class="content">
+                  <div class="frame my-3">
+                    <div class="image text-center">
+                      <img src="../images/user3.png" class="rounded-circle" alt="">
+                      <h5 class="title">Louis Henry</h5>
+                    </div>
+                    <div class="chart my-5">
+                      <div class="w-75 px-5 m-auto">
+                        <img src="../images/img-chart.png" class="w-100 m-auto" alt="">
+                      </div>
+                    </div>
+                    <div class="social-stats-frame ">
+                      <div class="social d-flex justify-content-around w-50 m-auto">
+                        <div class=" text-center">
+                          <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                          </div>
+                          <div class="title">539</div>
+                        </div>
+                        <div class=" text-center">
+                          <div class="icon"><i class="fa fa-dribbble" aria-hidden="true"></i>
+                          </div>
+                          <div class="title">1632</div>
+                        </div>
+                        <div class=" text-center">
+                          <div class="icon"><i class="fa fa-behance" aria-hidden="true"></i>
+                          </div>
+                          <div class="title">3027</div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="text-center"><a href="#" class="button d-inline-block">View Profile</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-fill w-item">
+                <div class="p-3 d-flex border-bottom">
+                  <div class="title mr-auto">Reviews</div>
+                  <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                </div>
+                <div class="content">
+                  <div class="d-flex item-frame">
+                    <div class="image center-frame"><img src="../images/user4.png" class="item rounded-circle" alt=""></div>
+                    <div class="text">
+                      <div class="title">Nathan Hunter</div>
+                      <div class="start">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <div class="description text-black-50">Lorem ipsum dolor sit amet ...</div>
+                      <div class="time text-black-50">30 minutes ago - 2 Reply</div>
+                    </div>
+                    <div class="like center-frame"><i class="fa fa-heart text-pink item" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex item-frame">
+                    <div class="image center-frame"><img src="../images/user4.png" class="item rounded-circle" alt=""></div>
+                    <div class="text">
+                      <div class="title">Nathan Hunter</div>
+                      <div class="start">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <div class="description text-black-50">Lorem ipsum dolor sit amet ...</div>
+                      <div class="time text-black-50">30 minutes ago - 2 Reply</div>
+                    </div>
+                    <div class="like center-frame"><i class="fa fa-heart text-pink item" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex item-frame">
+                    <div class="image center-frame"><img src="../images/user4.png" class="item rounded-circle" alt=""></div>
+                    <div class="text">
+                      <div class="title">Nathan Hunter</div>
+                      <div class="start">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <div class="description text-black-50">Lorem ipsum dolor sit amet ...</div>
+                      <div class="time text-black-50">30 minutes ago - 2 Reply</div>
+                    </div>
+                    <div class="like center-frame"><i class="fa fa-heart text-pink item" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex item-frame">
+                    <div class="image center-frame"><img src="../images/user4.png" class="item rounded-circle" alt=""></div>
+                    <div class="text">
+                      <div class="title">Nathan Hunter</div>
+                      <div class="start">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <div class="description text-black-50">Lorem ipsum dolor sit amet ...</div>
+                      <div class="time text-black-50">30 minutes ago - 2 Reply</div>
+                    </div>
+                    <div class="like center-frame"><i class="fa fa-heart text-pink item" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
 
-            <div class="widgets-frame widgets4 border">frame 4</div>
+            </div>
+
+            <div class="widgets-frame widgets3  w-item">
+              <div class="p-3 d-flex border-bottom">
+                <div class="title mr-auto">Products Overview</div>
+                <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+              </div>
+              <div class="table-frame p-3">
+                <div class="table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Country</th>
+                        <th>Ship Date</th>
+                        <th>Status</th>
+                        <th>Order Total</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class=" bg-pink">Failed</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>054-01-FR</td>
+                        <td>Custormer Name</td>
+                        <td>US</td>
+                        <td>10/21/2017</td>
+                        <td><span class="status">Paid</span></td>
+                        <td>$432.50</td>
+                        <td>
+                          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                        </td>
+                      </tr>              
+                    </tbody>
+                  </table>
+                </div>
+                <div class="bottom d-flex">
+                  <div class="showing">Showing 1-15 / 50 Results</div>
+                  <div class="pages ml-auto d-flex">
+                    <div class="prev"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                    <div class="page"><a href="#">1</a></div>
+                    <div class="page"><a href="#" class="active">2</a></div>
+                    <div class="page"><a href="#">3</a></div>
+                    <div class="next"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="widgets-frame widgets4  d-flex flex-wrap">
+              <div class="col-md-3  w-item">
+                <div class="p-3 d-flex border-bottom">
+                  <div class="title mr-auto">Tasks</div>
+                  <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                </div>
+                <div class="content p-3">
+                  <h2 class="title">TODAY</h2>
+                  <div class="d-flex align-items-end">
+                    <span class="title text-pink">12</span>
+                    <span>new tasks</span>
+                  </div>
+                  <div class="task-item-frame mt-4">
+                    <div class="task-item d-flex align-items-end">
+                      <div class="checkbox"><input type="checkbox"></div>
+                      <div class="content">Lorem ipsum dolor sit amet task</div>
+                    </div>
+                    <div class="task-item d-flex align-items-end">
+                      <div class="checkbox"><input type="checkbox"></div>
+                      <div class="content">Lorem ipsum dolor sit amet task</div>
+                    </div>
+                    <div class="task-item d-flex align-items-end">
+                      <div class="checkbox"><input type="checkbox"></div>
+                      <div class="content">Lorem ipsum dolor sit amet task</div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-5  px-3">
+                <div class=" w-item h-100">
+                  <div class="p-3 d-flex border-bottom">
+                    <div class="title mr-auto">Support Tickets</div>
+                    <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                  </div>
+                  <div class="comment-item d-flex">
+                    <div class="image-user">
+                      <img src="../images/user5.png" alt="">
+                    </div>
+                    <div class="comment-frame">
+                      <h5 class="title">Brandon Smith <em>Reply</em></h5>
+                      <div class="comment">Fusce id risus nec lacus tempor condimentum at ut est. Suspendisse id turpis massa. Praesent magna metus, aliquam id tellus a, malesuada iaculis nibh. Mauris tempus, quam id tempus tincidunt, magna purus sagittis erat, at eleifend ...</div>
+                    </div>
+                  </div>
+                  <div class="comment-item d-flex">
+                    <div class="image-user">
+                      <img src="../images/user6.png" alt="">
+                    </div>
+                    <div class="comment-frame">
+                      <h5 class="title">Brandon Smith <em>Reply</em></h5>
+                      <div class="comment">Fusce id risus nec lacus tempor condimentum at ut est. Suspendisse id turpis massa. Praesent magna metus, aliquam id tellus a, malesuada iaculis nibh. Mauris tempus, quam id tempus tincidunt, magna purus sagittis erat, at eleifend ...</div>
+                    </div>
+                  </div>
+                  <div class="comment-item d-flex">
+                    <div class="image-user">
+                      <img src="../images/user7.png" alt="">
+                    </div>
+                    <div class="comment-frame">
+                      <h5 class="title">Brandon Smith <em>Reply</em></h5>
+                      <div class="comment">Fusce id risus nec lacus tempor condimentum at ut est. Suspendisse id turpis massa. Praesent magna metus, aliquam id tellus a, malesuada iaculis nibh. Mauris tempus, quam id tempus tincidunt, magna purus sagittis erat, at eleifend ...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 w-item activity">
+                <div class="p-3 d-flex border-bottom">
+                  <div class="title mr-auto">Activity</div>
+                  <div class="icon"><i class="fa fa-ellipsis-h" aria-hidden=true></i></div>
+                </div>
+                <div class="m-3">
+                  <div class="content-frame d-flex">
+                    <div class="line"></div>
+                    <div class="content-item ">
+                      <h5 class="title">Username</h5>
+                      <p>Username Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                  <div class="content-frame d-flex">
+                    <div class="line"></div>
+                    <div class="content-item ">
+                      <h5 class="title">Username</h5>
+                      <p>Username Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                  <div class="content-frame d-flex">
+                    <div class="line"></div>
+                    <div class="content-item ">
+                      <h5 class="title">Username</h5>
+                      <p>Username Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                  <div class="content-frame d-flex">
+                    <div class="line"></div>
+                    <div class="content-item">
+                      <h5 class="title">Username</h5>
+                      <p>Username Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                  <div class="content-frame d-flex">
+                    <div class="line"></div>
+                    <div class="content-item flex-fill">
+                      <a href="#" class="title">Load More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -164,7 +629,13 @@
 
         <!-- footer -->
         <div class="footer-frame border">
-          <div class="footer m-2">footer</div>
+          <div class="footer-left title">Created with <i class="fa fa-heart text-pink" aria-hidden="true"></i> by Saerox</div>
+          <div class="footer-right ml-auto">
+            <a href="#">Menu Link</a>
+            <a href="#">Menu Link</a>
+            <a href="#">Menu Link</a>
+
+          </div>
         </div>
       </div>
 

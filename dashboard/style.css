@@ -15,20 +15,30 @@ body {
 }
 
 /* style dung chung */
-a:hover{
+a:hover {
   text-decoration: none;
 }
-.button{
-  background: linear-gradient(to right, #e23f83, #e23f83 50%,#ea5844);
+.button {
+  background: linear-gradient(to right, #e23f83, #e23f83 50%, #ea5844);
   border-radius: 20px;
   padding: 8px 15px;
-  color:white;
+  color: white;
 }
-.title-frame{
+.title-frame {
   padding: 10px;
-    margin: 10px 0;
+  margin: 10px 0;
 }
-.button2{
+.title {
+  font-weight: bold;
+  color: #2c304d;
+}
+.text-pink {
+  color: #e76c90;
+}
+.bg-pink {
+  background: #e24081;
+}
+.button2 {
   background: white;
   border-radius: 20px;
   padding: 8px 15px;
@@ -92,18 +102,175 @@ a:hover{
 
 /* end style nav-slidebar */
 
-
 /* style widgets-frame */
-.widgets .widgets-frame{
+
+.widgets .widgets-frame {
   margin: 10px 0;
 }
-.widgets1-left>div{
-  height: 48%;
+.widgets-frame > div {
+  padding: 0;
 }
-
-.widgets .widgets1 .happy-customers{
-  background: linear-gradient(135deg,#6859ea,#6acbe0);
+.w-item {
+  background: white;
+}
+.widgets1 .happy-customers {
+  background: linear-gradient(135deg, #6859ea, #6acbe0);
+}
+.widgets1 .total .solieu h1 {
+  color: #06a0bd;
+  font-weight: bold;
+  padding-bottom: 15%;
 }
 /* style widgets-item1 */
 
+/* style .widgets-itme2 */
+.widgets2 .content-frame .content {
+  box-shadow: 0 0 4px #ccc;
+}
+.widgets2 .social > div {
+  font-size: 150%;
+}
+.widgets2 .content .item-frame {
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.widgets2 .content .item-frame .image {
+  width: 20%;
+}
+.widgets2 .content .item-frame .text {
+  width: 60%;
+}
+.widgets2 .content .item-frame .like {
+  width: 20%;
+}
+.widgets2 .center-frame {
+  position: relative;
+}
+.widgets2 .center-frame .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* style .widgets3 */
+.widgets3 table {
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+.widgets3 table thead {
+  background: #f3f4f8;
+}
+.widgets3 table th {
+  border: 0;
+}
+.widgets3 table td {
+  color: #aea9c3;
+  border: 0;
+}
+.widgets3 table td span.status {
+  background: #08a6c3;
+  border-radius: 20px;
+  display: inline-block;
+  width: 65%;
+  color: white;
+  padding: 4px 0;
+}
+.widgets3 table td i {
+  padding: 0 3px;
+}
+.bg-pink {
+  background: #e24081;
+  border-radius: 20px;
+  display: inline-block;
+  width: 65%;
+  color: white;
+  padding: 4px 0;
+}
+.table-frame .bottom,
+.bottom .page a {
+  color: #aea9c3;
+}
+.table-frame .bottom .pages > div {
+  padding: 0 5%;
+}
+.table-frame .bottom .page a.active {
+  background: #5d5386;
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  color: white;
+}
+/* style .widgets4 */
+.widgets4 span.title {
+  font-size: 300%;
+  line-height: 1;
+}
+.widgets4 .task-item-frame .checkbox {
+  line-height: 1;
+  padding: 0 10px;
+}
+.widgets4 .task-item {
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #5d5386;
+}
+.widgets4 .comment-item{
+  margin: 4%;
+}
+.widgets4 .comment-item .image-user{
+  padding-right:5%;
+}
+.widgets4 .comment-item .image-user img{
+  border-radius: 50%;
+}
+.widgets4 .activity .content-frame .line{
+  border: 2px solid #f2f3f8;
+  margin-right: 30px;
+}
+.widgets4 .activity .content-frame .content-item{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.widgets4 .activity .content-item p,.widgets4 .comment{
+  color:#aea9c3;
+}
+
+.widgets4 .activity .content-frame .content-item .dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #5d5386;
+  position: absolute;
+  top: 0;
+  left: -42px;
+}
+
+.widgets4 .activity .content-frame:nth-child(3) .content-item .dot{
+  background: #e24081;
+}
+.widgets4 .activity .content-frame:nth-child(2) .content-item .dot{
+  background: #08a6c3;
+}
+.widgets4 .activity .content-frame:last-child .content-item{
+  text-align: center;
+  margin: 20px;
+}
 /* end style widgets-frame */
+
+/* style footer */
+.footer-frame{
+  background: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-frame .footer-right a{
+  margin: 0 10px;
+  color: unset;
+}
+/* end style footer */
