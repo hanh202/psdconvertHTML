@@ -12,7 +12,7 @@ Chart.pluginService.register({
       var txt = centerConfig.text;
       var color = centerConfig.color || '#000';
 
-      var fontSizeToUse = '20';
+      var fontSizeToUse = '32';
 
       //Set font settings to draw it correctly.
       ctx.textAlign = 'center';
@@ -88,31 +88,71 @@ var pie3 = new Chart(
   ctx3,
   fnConfig('65', '35', '#06a0bd', '#f0eff4', '0', '65%', '#2c304d')
 );
-var ctx4 = document.getElementById('chartBar').getContext('2d');
-var bar = new Chart(ctx4, {
-  type: 'bar',
-  data: {
-    labels: [
-      'JAN',
-      'FEB',
-      'MAR',
-      'APR',
-      'MAY',
-      'JUN',
-      'JUL',
-      'AUG',
-      'SEP',
-      'OCT',
-      'NOV',
-      'DEC'
-    ],
-    datasets: [
-      {
-        // label: '# of Votes',
-        data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-        backgroundColor: '#5d5386'
-      }
-    ]
-  },
-  options: {}
-});
+
+Chart.defaults.global.legend.labels.usePointStyle = true;
+function configBarChart() {
+  return (configBarChart = {
+    type: 'bar',
+    data: {
+      labels: [
+        'JAN',
+        'FEB',
+        'MAR',
+        'APR',
+        'MAY',
+        'JUN',
+        'JUL',
+        'AUG',
+        'SEP',
+        'OCT',
+        'NOV',
+        'DEC'
+      ],
+      datasets: [
+        {
+          label: 'delivered',
+          data: [90, 70, 70, 40, 90, 70, 70, 50, 90, 70, 70, 40],
+          backgroundColor: '#5d5386'
+        },
+        {
+          label: 'estimated',
+          data: [10, 25, 20, 50, 10, 25, 20, 50, 10, 25, 20, 50],
+          backgroundColor: '#e4e8f0'
+        }
+      ]
+    },
+    options: {
+      scales: {
+        xAxes: [
+          {
+            ticks: {
+              display: false
+            },
+            barPercentage: 0.5,
+            stacked: true,
+            gridLines: { display: false, color: '#fff' }
+          }
+        ],
+        yAxes: [
+          {
+            ticks: {
+              display: false
+            },
+            stacked: true,
+            gridLines: { display: false, color: '#fff' }
+          }
+        ]
+      },
+      layout: {
+        padding: {
+          top: 50,
+          bottom: 50
+        },
+        borderRadius: 5
+      },
+      legend: { position: 'bottom', usePointStyle: true }
+    }
+  });
+}
+var ctx4 = document.getElementById('chartBar');
+var pie4 = new Chart(ctx4, configBarChart());

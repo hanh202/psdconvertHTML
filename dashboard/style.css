@@ -45,6 +45,7 @@ a:hover {
   color: #2c304d;
   box-shadow: 0 0 20px #ccc;
 }
+
 /* end style dung chung */
 
 /* style top */
@@ -113,16 +114,50 @@ a:hover {
 .w-item {
   background: white;
 }
-.widgets1 .happy-customers {
-  background: linear-gradient(135deg, #6859ea, #6acbe0);
-}
+
+/* style widgets-item1 */
 .widgets1 .total .solieu h1 {
   color: #06a0bd;
   font-weight: bold;
-  padding-bottom: 15%;
 }
-/* style widgets-item1 */
+.widgets1-left .left-frame .item-top,
+.left-frame .item-bottom {
+  background: white;
+}
+.widgets1-left .left-frame {
+  height: 100%;
+}
+.widgets1-left .left-frame .item-bottom {
+  background: linear-gradient(135deg, #6859ea, #6acbe0);
+}
+.widgets1-left .left-frame h6 {
+  font-weight: bold;
+  padding: 5%;
+}
+.widgets1-right {
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.widgets1-right .chart-frame {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .widgets1-right .chart-frame .chart-item {
+  border: 1px solid green;
+} */
 
+.widgets1-right .chart-frame .total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.widgets1-right .chart-frame .total > div {
+  margin: 4% 0;
+}
 /* style .widgets-item2 */
 .widgets2 .content-frame .content {
   box-shadow: 0 0 10px #ccc;
@@ -299,8 +334,12 @@ a:hover {
 }
 /* end style footer */
 
-@media screen and (max-width: 320px) {
-  .widgets2 .content .item-frame .image img {
-    width: 30%;
+/* .body {
+  background: green;
+} */
+
+@media (max-width: 768px) {
+  .body .nav-slidebar .nav-slidebar-frame {
+    display: none;
   }
 }
