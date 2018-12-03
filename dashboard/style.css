@@ -79,7 +79,7 @@ a:hover {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 .body .nav-slidebar .nav-slidebar-frame .icon-frame {
-  margin: 10% 0;
+  margin: 20% 0;
 }
 .body .nav-slidebar .nav-slidebar-frame .icon-frame i::before {
   color: white;
@@ -169,7 +169,7 @@ a:hover {
   font-size: 150%;
 }
 .widgets2 .content .item-frame {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #eeeeee;
 }
 .widgets2 .content .item-frame:last-child {
@@ -223,6 +223,30 @@ a:hover {
   right: 3%;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+.widgets2-frame .content3 {
+  max-height: 370px;
+  overflow: auto;
+}
+.widgets2-frame .content3::-webkit-scrollbar {
+  width: 3px;
+  height: 50%;
+}
+
+/* Track */
+.widgets2-frame .content3::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+.widgets2-frame .content3::-webkit-scrollbar-thumb {
+  background: #eeeeee;
+}
+
+/* Handle on hover */
+.widgets2-frame .content3::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* style .widgets3 */
