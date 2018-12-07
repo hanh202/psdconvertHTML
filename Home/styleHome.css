@@ -41,6 +41,9 @@ a:hover {
   display: block;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+.baner-header .menu .header-frame{
+  
+}
 .baner-header .menu nav a {
   color: white;
   font-size: 80%;
@@ -91,11 +94,26 @@ a:hover {
 /* end style slideshow */
 
 /* style services  */
-.services {
+.services--frame{
   color: #555555;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.services--frame>div{
+  margin: 5% 0;
+}
+.services .icon{
+  width: 25%;
+  height: 25%;
+  margin: auto;
 }
 .services .icon i {
   font-size: 300%;
+}
+.services--frame h5{
+  font-weight: bold;
 }
 .services .content,
 .laster-project .content {
@@ -105,8 +123,10 @@ a:hover {
 .services .line {
   width: 25%;
   margin: 0 auto;
+  margin-top:10%;
   border: 2px solid #f1eee9;
 }
+
 .services div > div:hover .icon i::before,
 .services div > div:hover .title {
   color: #c7b299;
@@ -123,9 +143,21 @@ a:hover {
 .waxom {
   background: #fbfaf8;
 }
+.waxom .content-frame{
+  text-align: center;
+  padding: 5% 0 4% 0;
+  width: 75%;
+  margin: auto;
+}
+.waxom h5{
+  font-weight: bold;
+}
 .waxom .content {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 80%;
+}
+.waxom img{
+  width: 100%;
 }
 /* end style waxom */
 
@@ -135,11 +167,28 @@ a:hover {
   color: #615855;
   line-height: 0.5;
 }
+.textbox>div{
+  color: white;
+  display: flex;
+  padding: 3%;
+  flex-wrap: wrap;
+}
+.textbox .text-left{
+  margin-right: auto;
+}
+.textbox .text-left p{
+  margin: 0;
+}
 .textbox .text-left h4 {
   color: white;
 }
 .textbox .text-left h4 span {
   color: #c7b299;
+}
+.textbox .text-right{
+  display: flex;
+  align-items: center;
+  margin-right: 0;
 }
 .textbox .text-right .button a {
   color: white;
@@ -155,20 +204,45 @@ a:hover {
 }
 /* end style textbox */
 
-/* style laster project */
+/* style laster project 1*/
+.projects--laster{
+  margin: 5% 0;
+}
+.laster-project .loadmore{
+  text-align: center;
+}
 .laster-project .loadmore a {
   color: white;
+  border: 1px solid #eeeeee;
+  margin-top: 3%;
+}
+.projects--laster .categories{
+  margin: 3% auto;
+  text-align: center;
 }
 .laster-project .categories a {
   color: #555555;
   font-size: 90%;
+  border:1px solid #eeeeee;
+  padding: 5px 30px;
 }
 .laster-project .categories a:hover {
   color: white;
   background: #998675;
 }
+.description-frame{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+.laster-project .projects{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
 .laster-project .projects .title-frame h5 {
   color: #c7b299;
+  font-weight: bold;
 }
 .laster-project .projects .title-frame .text-content {
   font-size: 90%;
@@ -177,6 +251,7 @@ a:hover {
 .laster-project .projects .title-frame {
   position: relative;
   background: #fbfaf8;
+  padding: 10%;
 }
 .laster-project .projects .arrow {
   width: 0;
@@ -188,18 +263,19 @@ a:hover {
   top: -7px;
 }
 .laster-project .projects .image {
-  height: 100%;
-}
-.laster-project .projects .image {
   position: relative;
   height: 46%;
 }
 .laster-project .projects .image img {
   height: 100%;
+  width: 100%;
 }
 
 .laster-project .project__mark .icon {
   display: none;
+}
+.laster-project .project__mark .icon a{
+  padding: 2%;
 }
 .laster-project .project__mark .icon a:first-child i {
   transform: rotateY(180deg);
@@ -244,11 +320,18 @@ a:hover {
 .video-presentation {
   background: url('../images/video.jpg') no-repeat center;
   background-size: cover;
-  height: 60vh;
   position: relative;
+}
+.video-presentation .video--frame{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
 }
 .video-presentation .content {
   z-index: 1;
+  color: white;
+  text-align: center;
 }
 .video-presentation .content .icon a img {
   background: rgba(0, 0, 0, 0.2);

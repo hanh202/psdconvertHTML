@@ -1,7 +1,7 @@
 Chart.defaults.global.elements.arc.borderWidth = 0;
 
 Chart.pluginService.register({
-  beforeDraw: function(chart) {
+  beforeDraw: function (chart) {
     if (chart.config.options.elements.center) {
       //Get ctx from string
       var ctx = chart.chart.ctx;
@@ -147,10 +147,12 @@ function configBarChart() {
         padding: {
           top: 50,
           bottom: 50
-        },
-        borderRadius: 5
+        }
       },
-      legend: { position: 'bottom', usePointStyle: true }
+      legend: { position: 'bottom', usePointStyle: true },
+      elements: {
+        hitRadius: 10
+      }
     }
   });
 }

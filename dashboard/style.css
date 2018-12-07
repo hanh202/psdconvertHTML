@@ -113,7 +113,7 @@ a:hover {
   font-size: 150%;
   padding: 5px 10px 0 10px;
 }
-.body .nav-slidebar .nav-slidebar-frame .icon-frame i::before {
+.nav-slidebar-frame i::before {
   color: white;
 }
 .nav-slidebar-frame .nav-item>.text{

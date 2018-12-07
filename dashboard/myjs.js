@@ -1,5 +1,7 @@
 var show = true;
-function showDropdown(id) {
+function showDropdown(a, id) {
+  // console.dir(a);
+  console.log(a.className);
   var dropdown = document.getElementById(id);
   if (show) {
     dropdown.style.display = 'block';
